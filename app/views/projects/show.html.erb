@@ -1,0 +1,8 @@
+<h1><%= @project.name %></h1>
+<ul>
+    <li>Creator: <%= @project.creator %></li>
+    <li>Backers: <%= @project.number_of_backers %></li>
+</ul>
+<%= button_to("Home", projects_path, method: :get) %><br>
+<%= button_to("Update Project", edit_project_path(@project), method: :get) %><br>
+<%= button_to("Delete Project", @project, method: :delete) %>
